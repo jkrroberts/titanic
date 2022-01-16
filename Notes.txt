@@ -1,0 +1,56 @@
+https://www.data.gov/
+https://registry.opendata.aws/
+git hub public data sources
+https://github.com/awesomedata/awesome-public-datasets
+
+numerical
+cetrality mearsure are numeric values with a standard increment can be measured via mean & median
+dispersion measure are range, percentiles, variance, standard deviation
+
+categorical - aka dimensions
+total count
+unique count
+category counts and proportions
+per category stats
+
+median is the middle of a all the values of numbers. If all values are an even number it takes the 2 middle numbers and
+calculates the median by (v1+v2) / 2 = y
+
+range calculated by
+max - min = y
+small numbers means the values are close together. easily affected by outliers
+
+percentile
+Quartiles how many values fall in 1-25, 26-50, 51-75, 76-100
+Box - Whisker plot based on quartiles
+The box is 25 to 75 percent. Line in the box is 50% whiskers and top and bottom are the range from min to max values.
+min & max values exclude extreme values.
+IQR Inter-quartile range is the difference between the 25th to 75 percentile. It is the higth of the box.
+dots above or below the whiskers represents the outliers. outliers = beyond 1.5 * IQR
+
+variance
+variance = sum((value-mean)squared) / count
+variance affected by extreme values
+also unit is not clear due to the squaring.
+
+standard deviation
+is the square root of the variance
+
+counts and proportions
+values and the counts of those unique values. Proportions is the percentage those values within the column.
+
+Distributions
+    -Univariate is looking at the data by only one attribute. Histogram, Kernel Density Estimation KDE plots
+    -Bivariate use Scatter plot
+
+Mean Impuation for missing values.
+Basically you just add the mean for any values that are missing.
+Median Imputation is the better solution.
+For sequential time based data you can use the values before or after your missing data.
+Predictive modeling is also a possibility for missing values.
+
+# Categorical feature encoding.
+# binary encoding works when you only have 2 values and can set them to 0 or 1
+# Lable encoding assigning values a numeric value 1=low, 2=medium, etc
+# one-hot encoding is creating a feature for each value for instance Embarked values is A, B, or C you would create
+# a new column of Is_A set to 0 or 1 Is_B set to 0 or 1, etc

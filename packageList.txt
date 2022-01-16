@@ -1,0 +1,6 @@
+pandas
+jupyter
+matplotlib
+ipython-sql
+cookiecutter
+python-dotenv
